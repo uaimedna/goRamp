@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
-use \Silber\Bouncer\Bouncer;
+use Silber\Bouncer\BouncerFacade as Bouncer;
 use \App\Orders;
 
 class BouncerSeeder extends Seeder
