@@ -16,7 +16,7 @@ class CreateOrders extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->softDeletes(0);
+            $table->softDeletes();
             $table->timestamps();
 
             $table->unsignedBigInteger('user_id');

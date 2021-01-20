@@ -21,6 +21,16 @@ class User extends Authenticatable
         'name', 'email', 'password',
     ];
 
+    public function company()
+    {
+        return $this->belongsTo('App\Company');
+    }
+
+    public function orders()
+    {
+        return $this->hasMany('App\Orders');
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *
